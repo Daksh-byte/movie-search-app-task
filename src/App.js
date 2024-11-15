@@ -3,15 +3,15 @@ import axios from 'axios';
 import MovieList from './components/MovieList';
 import SearchBar from './components/SearchBar';
 import MovieModal from './components/MovieModal';
-
-const API_KEY = '145edd33';
+import './App.css';
+const API_KEY = '145edd33';  
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
 
-  // Fetch default popular movies when the component mounts
+  
   useEffect(() => {
     axios
     .get(`http://www.omdbapi.com/?s=popular&apikey=${API_KEY}`)
@@ -23,7 +23,7 @@ const App = () => {
       .catch((error) => console.error(error));
   }, []);
 
-  // Search movie based on the searchTerm
+  
   const handleSearch = () => {
     if (searchTerm) {
       axios
