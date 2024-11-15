@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+How to run locally:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+Install Dependencies like Axios
+check if your package.JSON has 'Axios'
+if not installed, then install axios by command 'npm install axios'
 
 In the project directory, you can run:
 
-### `npm start`
+by giving command  npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+it Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser. 
+Navigate to http://localhost:3000 to view the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Configure API Key
+replacing <YOUR_API_KEY> with your OMDB API key .
+npm start
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+How to Test-
+Search Functionality
 
-### `npm run build`
+Enter a movie name in the search bar to display relevant results.
+If no movie name is entered, the app displays popular movies by default.
+View Movie Details-like poster and title .
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on a movie poster or title to open a modal that displays detailed information, such as,
+Plot
+Release Year
+Genre
+Ratings.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+if we entered any irrelavent movie name which is not present ,it will show no movies found as the result.
+so, This is how we test the Api.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+About the project:
 
-### `npm run eject`
+This React.js web app lets users search for movies and view details like title, year, genre, plot, and ratings. It fetches data from the OMDB API and displays popular movies by default. Users can click on a movie to open a modal with additional information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+So, This is All about Search movie app Task.
